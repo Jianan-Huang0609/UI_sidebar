@@ -89,6 +89,42 @@ SideBar/
 - 调整 `tailwind.config.js` 来自定义主题色彩
 - 修改 `app/globals.css` 来调整 CSS 变量
 
+## 📖 使用指南
+
+### 在现有项目中使用此侧边栏组件
+
+#### 方法1：直接复制文件（推荐）
+1. 复制 `components/ui/sidebar.tsx` 到您的项目
+2. 复制 `lib/utils.ts` 到您的项目  
+3. 安装必需依赖：
+   ```bash
+   npm install @tabler/icons-react clsx motion tailwind-merge
+   ```
+4. 在您的页面中导入使用：
+   ```tsx
+   import { Sidebar, SidebarBody, SidebarLink } from '@/components/ui/sidebar'
+   ```
+
+#### 方法2：克隆整个项目
+```bash
+git clone https://github.com/Jianan-Huang0609/UI_sidebar.git
+cd UI_sidebar
+npm install
+npm run dev
+```
+
+### 📋 完整使用示例
+
+查看 `examples/integration-example.tsx` 文件获取详细的集成示例，包括：
+- 简单页面布局
+- Next.js App Router 集成
+- 条件渲染侧边栏
+- 自定义主题配置
+
+### 📚 详细文档
+
+请参阅 `USAGE_GUIDE.md` 获取完整的使用说明和最佳实践。
+
 ## 备注
 
 项目设置完整，所有必需的配置文件都已创建。你可以立即开始开发和自定义你的侧边栏组件！
